@@ -10,3 +10,37 @@
   width: 100%;
   height: 100%;
 }
+
+.test {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+.test .wrap {
+  position: relative;
+  background-color: #ff4d4f;
+  width: 50px;
+  height: 50px;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 0 0 16px rgb(104, 102, 102);
+  cursor: pointer;
+}
+
+.test .wrap::before {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  display: block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-left: 10px solid rgba(1,1,1,0);
+  border-top: 10px solid #ff4d4f;
+}
