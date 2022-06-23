@@ -11,29 +11,61 @@
   </head>
   <body>
     <div class="container">
-      <div id="fullpage">
-        <div class="section">
-          <div class="content">
-            <div class="header">hellow word!!Ant Design ❤️ you~</div>
-            
+      <!-- 正常布局 -->
+      <!-- 头部导航 -->
+      <div class="header">
+        <div class="left">
+          <h1>tanxl.github.io</h1>
+        </div>
+        <div class="right">查询｜对的｜对的</div>
+      </div>
+
+      <!-- 内容区域 -->
+      <div class="content">
+        <div class="left-persion">
+          <div class="avatar">
+            <!-- <img src="./public/img/avatar.jpeg" alt=""> -->
+          </div>
+          <h3>谭贤亮</h3>
+          <span>@tan-xianliang</span>
+          <span>热爱生活</span>
+        </div>
+
+        <div class="right-content">
+          <!-- 消息盒子 -->
+          <div class="message-box">
+            <div class="message-title">标题：个人博客</div>
+            <p class="message-content">内容：开始写个人博客了～</p>
+            <span class="message-date">发布时间：2022-6-23</span>
+          </div>
+
+          <!-- 消息盒子 -->
+          <div class="message-box">
+            <div class="message-title">标题：个人博客</div>
+            <p class="message-content">内容：开始写个人博客了～</p>
+            <span class="message-date">发布时间：2022-6-24</span>
+          </div>
+
+          <!-- 消息盒子 -->
+          <div class="message-box">
+            <div class="message-title">标题：个人博客</div>
+            <p class="message-content">内容：今天就到这儿了～</p>
+            <span class="message-date">发布时间：2022-6-24</span>
           </div>
         </div>
-        <div class="section bg-eee">
-          <!-- <div class="slide">Slide 1</div>
-          <div class="slide">Slide 2</div>
-          <div class="slide">Slide 3</div>
-          <div class="slide">Slide 4</div> -->
-          Some section
-        </div>
-        <div class="section">Some section</div>
-        <div class="section bg-eee">Some section</div>
       </div>
+
+      <!-- 尾部 -->
+      <div class="footer"></div>
       <div class="test">
         <div class="wrap"></div>
       </div>
     </div>
     <script>
       new fullpage("#fullpage", {
+        /* 非开源项目需要 licenseKey */
+        licenseKey: "",
+        controlArrows: true,
         autoScrolling: true,
         scrollHorizontally: true,
         sectionsColor: ["#FFFFFF", "#eeeeee", "#FFFFFF", "#eeeeee"],
